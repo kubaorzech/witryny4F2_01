@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>samochody</title>
+</head>
+<body>
+<form action="formularzsamochody.html">
+  <fieldset>
+    <legend>Samochód</legend>
+    <label for="marka">Marka samochodu:</label><br>
+    <input type="text" name="marka" required type="text"><br>
+
+    <label for="model">Model:</label><br>
+    <input type="text" name="model"><br>
+
+    <label for="typnad">Typ nadwozia</label><br>
+    <select name="typnad" name="typnad" size="5" multiple required type>
+      <option value="SUV">SUV</option>
+      <option value="kombi">kombi</option>
+      <option value="sedan">sedan</option>
+      <option value="hatchback">hatchback</option>
+      <option value="kabriolet ">kabriolet </option>
+    </select><br>
+
+    <label for="rokpr">Rok produkcji:</label><br>
+    <input type="month" placeholder="rok produkcji" id="rok" name="rok"><br>
+
+    <label for="paliwo">Paliwo:</label><br>
+    <select name="paliwo" id="paliwo">
+      <option style="display:none"></option>
+      <option value="benzyna">benzyna</option>
+      <option value="elektryczne">elektryczne</option>
+      <option value="diesel">diesel</option>
+      <option value="benzyna+gaz">benzyna+gaz</option>
+      <option value="etanol">etanol</option>
+    </select><br>
+
+    <label for="przebieg">przebieg od:</label><br>
+    <input type="range" name="przebiegod" min="25000" max="250000" step="25000" list="tickmarks" value="125000" oninput="this.nextElementSibling.value = this.value">
+    <output>125000</output><br>
+
+
+    <label for="przebieg">przebieg do:</label><br>
+    <input type="range" name="przebiegdo" min="25000" max="250000" step="25000" list="tickmarks" value="125000" oninput="this.nextElementSibling.value = this.value">
+    <output>125000</output><br>
+
+    <label for="cena">Cena od:</label><br>
+    <input type="range" required type name="cena" min="2000" max="500000" step="1000" list="tickmarks" value="250000" oninput="this.nextElementSibling.value = this.value">
+    <output>250000</output><br>
+
+    <label for="cena">Cena do:</label><br>
+    <input type="range" name="cena" min="2000" max="500000" step="1000" list="tickmarks" required="required" value="250000" oninput="this.nextElementSibling.value = this.value">
+    <output>250000</output><br>
+
+    <input type="submit" value="Wyślij">
+
+  </fieldset>
+
+</body>
+</html>
