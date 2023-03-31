@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="nb%20zaruwka.js" defer></script>
+    <style>
+        img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #przyciskjeden{
+            margin-left: 29%;
+        }
+        #przyciskdwa{
+            margin-left: 30%;
+        }
+        #fajnyprzycisk1{
+            margin-left: 30%;
+        }
+        #fajnyprzycisk2{
+            margin-left: 29.5%;
+        }
+        #sprawdzpudlo{
+            margin-left: 45%;
+
+        }
+        #pierwszy{
+            background-color: rgb(241, 241, 130);
+        }
+        #trzeci{
+            background-color: rgb(241, 241, 130);
+        }
+    </style>
+</head>
+<body>
+<table>
+    <td>
+        <tr>
+            <img id="obrazek" src="zaruwa2.jpg"><br>
+            <div id="pierwszy">
+                <input id="przyciskjeden" type="button" value="Włącz">
+                <input id="przyciskdwa" type="button" value="Wyłącz">
+                <br>
+            </div>
+        </tr>
+        <tr>
+            <div  id="drugi">
+                <form>
+                    <input id="fajnyprzycisk1" type="radio" name="radio">
+                    <label for="fajnyprzycisk1">Włącz</label>
+                    <input id="fajnyprzycisk2" type="radio" name="radio" checked>
+                    <label for="fajnyprzycisk2">Wyłącz</label>
+                </form>
+                <br>
+            </div>
+        </tr>
+        <tr>
+            <div id="trzeci">
+                <input type="checkbox" id="sprawdzpudlo">
+                <label for="sprawdzpudlo" id="sprawdzlabel">Wyłączony</label>
+            </div>
+        </tr>
+    </td>
+</table>
+</body>
+</html>
