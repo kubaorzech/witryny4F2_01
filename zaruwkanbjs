@@ -1,0 +1,52 @@
+const fajnyprzycisk2 = document.querySelector("#fajnyprzycisk2");
+const obrazek = document.querySelector("#obrazek");
+const radiowyjeden = document.querySelector("#radiowyjeden");
+const przyciskdwa = document.querySelector("#przyciskdwa");
+const przyciskjeden = document.querySelector("#przyciskjeden");
+const sprawdzpudlo = document.querySelector("#sprawdzpudlo");
+const lejbel = document.querySelector("#sprawdzlabel");
+
+document.querySelector("#przyciskjeden").addEventListener("click", function(){
+    radiowyjeden.setAttribute("checked","checked")
+    fajnyprzycisk2.checked=false
+    radiowyjeden.checked=true
+    obrazek.setAttribute("src","zaruwa1.jpg")
+    sprawdzpudlo.setAttribute("checked","checked")
+    sprawdzpudlo.checked=true
+
+});
+document.querySelector("#przyciskdwa").addEventListener("click", function(){
+    fajnyprzycisk2.checked=true
+    obrazek.setAttribute("src","zaruwa2.jpg")
+    sprawdzpudlo.checked=false
+
+});
+
+document.querySelector("#radiowyjeden").addEventListener("change", function(){
+    sprawdzpudlo.setAttribute("checked","checked")
+    sprawdzpudlo.checked=true
+    obrazek.setAttribute("src","zaruwa1.jpg")
+
+});
+
+document.querySelector("#fajnyprzycisk2").addEventListener("change", function(){
+
+    sprawdzpudlo.checked=false
+    obrazek.setAttribute("src","zaruwa2.jpg")
+
+});
+document.querySelector("#sprawdzpudlo").addEventListener("change", function(){
+
+    if(sprawdzpudlo.checked){
+        obrazek.setAttribute("src","zaruwa1.jpg")
+        radiowyjeden.setAttribute("checked","checked")
+        radiowyjeden.checked=true
+        lejbel.innerText="Włączony"
+    }
+    else{
+        obrazek.setAttribute("src","zaruwa2.jpg")
+        radiowyjeden.checked=false
+        fajnyprzycisk2.checked=true
+        lejbel.innerText="Wyłączony"
+    }
+});
