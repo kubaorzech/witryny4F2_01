@@ -1,0 +1,32 @@
+const jeden = document.querySelector("#jeden")
+const dwa = document.querySelector("#dwa")
+const trzy = document.querySelector("#trzy")
+const cztery = document.querySelector("#cztery")
+const kolor = document.querySelector("#kolor")
+
+jeden.addEventListener("mouseover", function (){
+    kolor.style.color =  "gold";
+})
+jeden.addEventListener("mouseout", function (){
+    kolor.style.color = "black"
+})
+
+dwa.addEventListener("mouseover", function (){
+    kolor.style.color =  "khaki";
+})
+dwa.addEventListener("mouseout", function (){
+    kolor.style.color = "black"
+})
+
+trzy.addEventListener("mouseover", function (){
+    kolor.style.color =  "silver";
+})
+trzy.addEventListener("mouseout", function (){
+    kolor.style.color = "black"
+})
+
+cztery.addEventListener("mouseover", function (){
+    kolor.style.color =  "peru";})
+cztery.addEventListener("mouseout", function (){
+    kolor.style.color =  "black";
+})

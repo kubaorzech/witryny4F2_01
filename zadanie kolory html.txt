@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kolor</title>
+    <script src="Kolor.js" defer> </script>
+    <style>
+        td {
+            padding: 30px;
+        }
+        p {
+            Font-Size: xxx-large;
+        }
+        table {
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+<p id="kolor">Zmień kolor tekstu</p>
+<table>
+    <tr>
+        <td id="jeden" style="background-color: gold">
+            gold
+        </td>
+        <td id="dwa" style="background-color: khaki">
+            khaki
+        </td>
+        <td id="trzy" style="background-color: silver">
+            silver
+        </td>
+        <td id="cztery" style="background-color: peru">
+            peru
+        </td>
+    </tr>
+</table>
+</body>
+</html>
+
